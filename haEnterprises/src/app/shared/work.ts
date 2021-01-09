@@ -1,4 +1,4 @@
-export class Dish {
+export class Work {
     id: string;
     name: string;
     image: string;

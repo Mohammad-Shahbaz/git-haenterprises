@@ -1,18 +1,27 @@
 import { Component, OnInit } from '@angular/core';
-import { Dish } from '../shared/dish';
+import { Work } from '../shared/work';
 
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.component.html',
-  styleUrls: ['./menu.component.scss']
+  styleUrls: ['./menu.component.scss'],
 })
+
+// const DISHES: Dish[] = [
+
+  
+//   ];
+ 
 export class MenuComponent implements OnInit {
 
-  dishes: Dish[] = [
+  // dishes = DISHES;
+
+  // selectedDish = DISHES[0];
+  workdetail: Work[] = [
     {
-      id: '0',
-      name: 'Uthappizza',
-      image: '/assets/images/uthappizza.png',
+      id: '0' ,
+      name: 'Constructing',
+      image: '/assets/images/const1.jpg',
       category: 'mains',
       featured: true,
       label: 'Hot',
@@ -22,8 +31,8 @@ export class MenuComponent implements OnInit {
     },
     {
       id: '1',
-      name: 'Zucchipakoda',
-      image: '/assets/images/zucchipakoda.png',
+      name: 'Willis Tower',
+      image: '/assets/images/const2.jpg',
       category: 'appetizer',
       featured: false,
       label: '',
@@ -32,8 +41,8 @@ export class MenuComponent implements OnInit {
     },
     {
       id: '2',
-      name: 'Vadonut',
-      image: '/assets/images/vadonut.png',
+      name: 'Apartment',
+      image: '/assets/images/const3.jpg',
       category: 'appetizer',
       featured: false,
       label: 'New',
@@ -42,8 +51,8 @@ export class MenuComponent implements OnInit {
     },
     {
       id: '3',
-      name: 'ElaiCheese Cake',
-      image: '/assets/images/elaicheesecake.png',
+      name: 'Instruments',
+      image: '/assets/images/const4.jpg',
       category: 'dessert',
       featured: false,
       label: '',
