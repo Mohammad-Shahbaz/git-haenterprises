@@ -1,3 +1,4 @@
+import { Comment } from './comment';
 export class Work {
     id: string;
     name: string;
@@ -7,4 +8,6 @@ export class Work {
     label: string;
     price: string;
     description: string;
+
+    comments: Comment[];
 }
