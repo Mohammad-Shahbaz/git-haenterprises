@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Work } from '../shared/work';
 import { DISHES } from '../shared/constfeatures';
+import { DesignService } from '../services/design.service';
+
 
 @Component({
   selector: 'app-menu',
@@ -22,9 +24,10 @@ export class MenuComponent implements OnInit {
   onSelect(work: Work) {
     this.selectedWork = work;
   }
-  constructor() { }
+  constructor(private designService:DesignService) { }
 
   ngOnInit() {
+    this.constFeatures= this.designService.getDesign();
   }
 
 }

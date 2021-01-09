@@ -9,11 +9,16 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { ConstdetailsComponent } from './constdetails/constdetails.component';
+import { DesignService } from './services/design.service';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
-    ConstdetailsComponent
+    ConstdetailsComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +29,7 @@ import { ConstdetailsComponent } from './constdetails/constdetails.component';
     MatCardModule,
     MatButtonModule
   ],
-  providers: [],
+  providers: [DesignService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
