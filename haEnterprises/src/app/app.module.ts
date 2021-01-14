@@ -10,6 +10,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { ConstdetailsComponent } from './constdetails/constdetails.component';
 import { DesignService } from './services/design.service';
+import { PromotionService } from './services/promotion.service'
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { AboutComponent } from './about/about.component';
@@ -39,7 +40,9 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
     MatButtonModule,
     AppRoutingModule
   ],
-  providers: [DesignService],
+  providers: [DesignService,
+              PromotionService
+            ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -9,7 +9,7 @@
   <div fxFlex="40">
 <mat-card *ngIf="work">
   <h2>{{work.name | uppercase}}</h2>
-  <img height="400px" width="400px" src={{work.image}} alt={{work.name}}>
+  <img style="max-width: 100%; height: auto;" src={{work.image}} alt={{work.name}}>
   <p>{{work.description}}</p>
   <button mat-button style="margin-right: 5px">Like</button>
   <button mat-button >Share</button>

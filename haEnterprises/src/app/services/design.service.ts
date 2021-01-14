@@ -9,6 +9,9 @@ export class DesignService {
   getDesign(): Work[] {
     return DISHES;
   }
+  getFeaturedDesign():Work{
+    return DISHES.filter((work) => work.featured)[0];
+    }
 
   constructor() { }
 }

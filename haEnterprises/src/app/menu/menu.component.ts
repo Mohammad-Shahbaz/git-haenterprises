@@ -17,7 +17,7 @@ import { DesignService } from '../services/design.service';
  
 export class MenuComponent implements OnInit {
 
-  constFeatures: Work[]=DISHES ;
+  constFeatures:Work[] ;
 
   selectedWork: Work;
 
@@ -27,7 +27,6 @@ export class MenuComponent implements OnInit {
   constructor(private designService:DesignService) { }
 
   ngOnInit() {
-    this.constFeatures= this.designService.getDesign();
-  }
+this.constFeatures=this.designService.getDesign()  }
 
 }
